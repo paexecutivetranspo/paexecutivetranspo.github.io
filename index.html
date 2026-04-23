@@ -4,108 +4,121 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>PA Executive Transportation LLC</title>
+
 <style>
 body {
-font-family: Arial, sans-serif;
 margin: 0;
-background-color: #0f172a;
+font-family: Arial, sans-serif;
+background: #0f172a;
 color: #f1f5f9;
 }
+
 header {
-background-color: #020617;
-padding: 20px;
+background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.7)),
+url('https://source.unsplash.com/1600x700/?luxury,car,chauffeur') center/cover;
+padding: 120px 20px;
 text-align: center;
-border-bottom: 2px solid #1e293b;
 }
+
 header h1 {
+font-size: 42px;
 margin: 0;
 color: #38bdf8;
 }
-nav {
-background-color: #020617;
-padding: 10px;
-text-align: center;
+
+header p {
+font-size: 18px;
 }
-nav a {
-color: #f1f5f9;
-margin: 0 15px;
+
+.btn {
+display: inline-block;
+margin: 10px;
+padding: 12px 20px;
+border-radius: 6px;
 text-decoration: none;
 font-weight: bold;
 }
-nav a:hover {
-color: #38bdf8;
-}
+
+.btn-call { background: #22c55e; color: white; }
+.btn-email { background: #3b82f6; color: white; }
+.btn-review { background: #f59e0b; color: black; }
+
 section {
-padding: 40px 20px;
 max-width: 1000px;
 margin: auto;
+padding: 40px 20px;
 }
+
 h2 {
 color: #38bdf8;
 }
+
 ul {
 line-height: 1.8;
 }
-.highlight {
-color: #22c55e;
-font-weight: bold;
+
+.card {
+background: #020617;
+padding: 20px;
+margin-top: 20px;
+border-radius: 10px;
+border: 1px solid #1e293b;
 }
+
 footer {
 text-align: center;
 padding: 20px;
-background-color: #020617;
-border-top: 2px solid #1e293b;
+background: #020617;
 margin-top: 40px;
 }
 </style>
 </head>
+
 <body>
 
 <header>
 <h1>PA Executive Transportation LLC</h1>
-<p>Luxury Chauffeur & Medical Courier Services</p>
+<p>Luxury Chauffeur & Medical Courier Services Across Florida</p>
+
+<!-- CONTACT BUTTONS -->
+<a href="tel:+13055289014" class="btn btn-call">📞 Call Now</a>
+<a href="mailto:info@paexecutivetransport.com" class="btn btn-email">✉️ Email Us</a>
+<a href="https://www.google.com/search?q=PA+Executive+Transportation+LLC+reviews" target="_blank" class="btn btn-review">⭐ Google Reviews</a>
 </header>
 
-<nav>
-<a href="#summary">Executive Summary</a>
-<a href="#company">Company</a>
-<a href="#services">Services</a>
-</nav>
-
-<section id="summary">
+<section>
 <h2>Executive Summary</h2>
+<div class="card">
 <p>
-PA Executive Transportation LLC is a Florida-based transportation company specializing in
-<span class="highlight">luxury executive chauffeur services</span> and
-<span class="highlight">time-sensitive medical courier services</span>.
+PA Executive Transportation LLC is a Florida-based transportation company providing
+luxury executive chauffeur services and time-sensitive medical courier services.
 </p>
 <p>
-We are committed to reliability, safety, professionalism, and strict
-<span class="highlight">HIPAA-compliant delivery standards</span>.
+We emphasize reliability, safety, professionalism, and strict HIPAA-compliant delivery standards.
 </p>
-<p>
-The company is currently seeking SBA financing to support vehicle acquisition, insurance coverage,
-licensing, and operational growth.
-</p>
+</div>
 </section>
 
-<section id="company">
+<section>
 <h2>Company Description</h2>
+<div class="card">
 <p>
-PA Executive Transportation LLC is a Florida Limited Liability Company providing two core divisions:
+Operating as a Florida Limited Liability Company (LLC), we provide:
 </p>
 <ul>
 <li>Executive Ground Transportation</li>
 <li>Medical Courier & Healthcare Logistics</li>
 </ul>
 <p>
-We serve corporate clients, healthcare providers, laboratories, and private clients across Florida.
+Serving corporate clients, healthcare facilities, laboratories, and private clients across Florida.
 </p>
+</div>
 </section>
 
-<section id="services">
+<section>
 <h2>Services</h2>
 
+<div class="card">
 <h3>Executive Transportation</h3>
 <ul>
 <li>Corporate Travel</li>
@@ -114,19 +127,22 @@ We serve corporate clients, healthcare providers, laboratories, and private clie
 <li>Hourly Chauffeur Services</li>
 <li>Long-Distance Executive Trips</li>
 </ul>
+</div>
 
+<div class="card">
 <h3>Medical Courier Services</h3>
 <ul>
 <li>Same-Day Medical Specimen Delivery</li>
 <li>Laboratory Transport</li>
-<li>Prescription & Pharmacy Delivery</li>
+<li>Prescription Delivery</li>
 <li>Medical Equipment & Supply Transport</li>
-<li>Scheduled & On-Demand Courier Services</li>
+<li>Scheduled & On-Demand Services</li>
 </ul>
+</div>
 </section>
 
 <footer>
-<p>&copy; 2026 PA Executive Transportation LLC | Florida, USA</p>
+<p>&copy; 2026 PA Executive Transportation LLC | Florida</p>
 </footer>
 
 </body>
