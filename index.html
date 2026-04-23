@@ -9,38 +9,44 @@
 body {
 margin:0;
 font-family: 'Segoe UI', Arial, sans-serif;
-background:black;
-color:white;
+background:#000;
+color:#fff;
 }
 
-.hero {
-position: relative;
-height: 100vh;
+/* NAV */
+.nav {
 display:flex;
-flex-direction:column;
-justify-content:center;
-align-items:center;
-text-align:center;
-background: url('https://images.unsplash.com/photo-1503376780353-7e6692767b70?auto=format&fit=crop&w=1600&q=80') center/cover no-repeat;
-}
-
-.hero::before {
-content:"";
+justify-content:space-between;
+padding:20px 40px;
 position:absolute;
-top:0;
-left:0;
 width:100%;
-height:100%;
-background: rgba(0,0,0,0.7);
+z-index:10;
 }
 
-.hero * {
-position: relative;
-z-index: 2;
+.nav a {
+color:white;
+margin-left:20px;
+text-decoration:none;
 }
 
-h1 {
-font-size:48px;
+/* HERO */
+.hero {
+height:100vh;
+display:flex;
+align-items:center;
+padding:60px;
+background:
+linear-gradient(to right, rgba(0,0,0,0.9), rgba(0,0,0,0.3)),
+url('https://images.unsplash.com/photo-1503376780353-7e6692767b70?auto=format&fit=crop&w=1600&q=80')
+center/cover no-repeat;
+}
+
+.hero-text {
+max-width:500px;
+}
+
+.hero h1 {
+font-size:52px;
 letter-spacing:2px;
 }
 
@@ -49,115 +55,161 @@ color:#d4af37;
 }
 
 .button {
-margin:10px;
-padding:12px 28px;
+display:inline-block;
+margin:10px 10px 0 0;
+padding:14px 28px;
 background:#d4af37;
 color:black;
 text-decoration:none;
+border-radius:5px;
 font-weight:bold;
-border-radius:6px;
 }
 
-.section {
+/* FEATURES */
+.features {
+display:flex;
+justify-content:space-around;
+padding:30px;
+background:#111;
+text-align:center;
+}
+
+/* FLEET */
+.fleet {
 padding:60px 20px;
 text-align:center;
 }
 
-.vehicles {
+.cars {
 display:flex;
-flex-wrap:wrap;
 justify-content:center;
-gap:20px;
+gap:30px;
+flex-wrap:wrap;
 }
 
-.vehicle-card {
+.car {
 background:#111;
 border-radius:10px;
+width:320px;
 overflow:hidden;
-max-width:300px;
 }
 
-.vehicle-card img {
+.car img {
 width:100%;
 height:200px;
 object-fit:cover;
 }
 
-.vehicle-card h3 {
-margin:10px 0;
+/* MEDICAL */
+.medical {
+padding:60px 20px;
+background:#0a0a0a;
+text-align:center;
+}
+
+.medical p {
+max-width:600px;
+margin:auto;
+line-height:1.6;
+}
+
+/* FORM */
+.form {
+padding:60px 20px;
+text-align:center;
 }
 
 form {
-max-width:400px;
+max-width:450px;
 margin:auto;
 }
 
-form input, form button {
+input {
 width:100%;
 padding:12px;
-margin:8px 0;
+margin:6px 0;
 border:none;
 border-radius:5px;
-}
-
-form input {
 background:#222;
 color:white;
 }
 
-form button {
+button {
+width:100%;
+padding:15px;
 background:#d4af37;
-color:black;
+border:none;
+margin-top:10px;
 font-weight:bold;
 }
 
+/* FOOTER */
 .footer {
 background:#111;
 padding:20px;
 text-align:center;
-font-size:14px;
 }
 </style>
 </head>
 
 <body>
 
-<div class="hero">
-<h1>PA Executive <span class="gold">Transportation</span></h1>
-<p>Luxury Chauffeur Service in Miami</p>
-
-<a href="tel:+13055289014" class="button">Call Now</a>
-<a href="mailto:info@paexecutivetranspo.com" class="button">Book Now</a>
+<div class="nav">
+<div><b>PA Executive</b></div>
+<div>
+<a href="#">Home</a>
+<a href="#fleet">Fleet</a>
+<a href="#medical">Medical</a>
+<a href="#form">Book</a>
+</div>
 </div>
 
-<div class="section">
+<div class="hero">
+<div class="hero-text">
+<h1>LUXURY.<br>COMFORT.<br><span class="gold">ON TIME.</span></h1>
+<p>Premium chauffeur and transport services in Miami</p>
+
+<a href="tel:+17866990804" class="button">Call Now</a>
+<a href="#form" class="button">Book Ride</a>
+</div>
+</div>
+
+<div class="features">
+<div>✔ Reliable</div>
+<div>✔ Professional Drivers</div>
+<div>✔ Luxury Fleet</div>
+<div>✔ 24/7 Service</div>
+</div>
+
+<div class="fleet" id="fleet">
 <h2 class="gold">Our Fleet</h2>
 
-<div class="vehicles">
-<div class="vehicle-card">
-<img src="https://images.unsplash.com/photo-1605559424843-9e4c228bf1c2">
-<h3>Luxury SUV</h3>
-<p>Spacious, comfortable, perfect for airport and executive travel</p>
+<div class="cars">
+<div class="car">
+<img src="https://images.unsplash.com/photo-1511919884226-fd3cad34687c?auto=format&fit=crop&w=800&q=80">
+<h3>Black SUV</h3>
 </div>
 
-<div class="vehicle-card">
-<img src="https://images.unsplash.com/photo-1616789916187-6e3c6c36a2b4">
-<h3>Executive Sedan</h3>
-<p>Premium ride for business and city travel</p>
-</div>
-
-<div class="vehicle-card">
-<img src="https://images.unsplash.com/photo-1503376780353-7e6692767b70">
-<h3>Black Car Service</h3>
-<p>High-end experience for special events and VIP clients</p>
+<div class="car">
+<img src="https://images.unsplash.com/photo-1616789916187-6e3c6c36a2b4?auto=format&fit=crop&w=800&q=80">
+<h3>Sprinter Van</h3>
 </div>
 </div>
 </div>
 
-<div class="section">
-<h2 class="gold">Book a Ride</h2>
+<div class="medical" id="medical">
+<h2 class="gold">Medical Courier Services</h2>
+<p>
+We provide secure, reliable, and time-sensitive medical courier services.
+Our team handles lab specimens, medical supplies, and critical deliveries
+with professionalism and care. Available 24/7 for hospitals, clinics, and private clients.
+</p>
+</div>
 
-<form action="https://formspree.io/f/YOUR-FORM-ID" method="POST">
+<div class="form" id="form">
+<h2>Reserve Your Ride</h2>
+
+<form action="https://formspree.io/f/YOUR-ID" method="POST">
 <input type="text" name="name" placeholder="Full Name" required>
 <input type="tel" name="phone" placeholder="Phone Number" required>
 <input type="email" name="email" placeholder="Email" required>
@@ -167,12 +219,6 @@ font-size:14px;
 
 <button type="submit">Request Booking</button>
 </form>
-</div>
-
-<div class="section">
-<h2 class="gold">Contact</h2>
-<p>Email: info@paexecutivetranspo.com</p>
-<p>Serving Miami, Florida</p>
 </div>
 
 <div class="footer">
