@@ -229,11 +229,52 @@ font-size:14px;
 
 <body>
 
-<!-- NAV -->
-<div class="nav">
-<div class="logo">
-PA <span style="color:white; font-size:18px; display:block;">EXECUTIVE TRANSPORTATION</span>
-</div>
+.nav {
+display:flex;
+justify-content:space-between;
+align-items:center;
+padding:25px 60px;
+position:absolute;
+width:100%;
+z-index:10;
+background: linear-gradient(to bottom, rgba(0,0,0,0.85), transparent);
+}
+.logo {
+display:flex;
+align-items:center;
+gap:10px;
+}
+
+/* Big gold PA */
+.logo .pa {
+font-family:'Playfair Display', serif;
+font-size:40px;
+font-weight:700;
+color:#d4af37;
+letter-spacing:2px;
+}
+
+/* Right side text */
+.logo-text {
+display:flex;
+flex-direction:column;
+line-height:1;
+}
+
+/* EXECUTIVE */
+.logo-text span:first-child {
+font-size:14px;
+letter-spacing:3px;
+font-weight:500;
+}
+
+/* TRANSPORTATION */
+.logo-text span:last-child {
+font-size:11px;
+letter-spacing:2px;
+color:#ccc;
+}
+
 
 <div class="menu">
 <a href="#">HOME</a>
