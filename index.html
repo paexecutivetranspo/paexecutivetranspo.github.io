@@ -3,21 +3,19 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>PA Executive Transportation LLC</title>
 
-<title>PA Executive Transportation</title>
-
-<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;700&family=Inter:wght@300;400;500&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700&family=Inter:wght@300;400;500&display=swap" rel="stylesheet">
 
 <style>
-
 body {
 margin:0;
-font-family: 'Inter', sans-serif;
+font-family:'Inter', sans-serif;
 background:#000;
 color:#fff;
 }
 
-/* NAVBAR */
+/* NAV */
 .nav {
 display:flex;
 justify-content:space-between;
@@ -26,20 +24,39 @@ padding:25px 60px;
 position:absolute;
 width:100%;
 z-index:10;
-background: linear-gradient(to bottom, rgba(0,0,0,0.85), transparent);
+background:linear-gradient(to bottom, rgba(0,0,0,0.9), transparent);
 }
 
 .logo {
+display:flex;
+align-items:center;
+gap:10px;
+}
+
+.logo .pa {
 font-family:'Playfair Display', serif;
-font-size:30px;
-font-weight:700;
+font-size:40px;
 color:#d4af37;
-letter-spacing:1px;
-line-height:1.2;
+}
+
+.logo-text {
+display:flex;
+flex-direction:column;
+line-height:1;
+}
+
+.logo-text span:first-child {
+font-size:14px;
+letter-spacing:3px;
+}
+
+.logo-text span:last-child {
+font-size:11px;
+color:#ccc;
 }
 
 .menu a {
-margin:0 20px;
+margin:0 15px;
 text-decoration:none;
 color:white;
 font-size:14px;
@@ -59,7 +76,8 @@ align-items:center;
 padding:0 80px;
 background:
 linear-gradient(to right, rgba(0,0,0,0.95), rgba(0,0,0,0.3)),
-url('hero.jpg') center/cover no-repeat;
+url('https://images.unsplash.com/photo-1503376780353-7e6692767b70?auto=format&fit=crop&w=1600&q=80')
+center/cover no-repeat;
 }
 
 .hero-text {
@@ -77,19 +95,17 @@ color:#d4af37;
 }
 
 .hero p {
-margin-top:15px;
 color:#ccc;
 }
 
 .btn {
 display:inline-block;
-margin-top:25px;
-margin-right:10px;
-padding:14px 30px;
+margin-top:20px;
+padding:14px 28px;
 background:#d4af37;
 color:black;
 text-decoration:none;
-font-weight:500;
+margin-right:10px;
 }
 
 .btn-outline {
@@ -104,8 +120,6 @@ display:flex;
 justify-content:space-around;
 padding:50px;
 background:#0b0b0b;
-border-top:1px solid #222;
-border-bottom:1px solid #222;
 }
 
 .feature {
@@ -113,79 +127,39 @@ text-align:center;
 max-width:200px;
 }
 
-.feature h3 {
-margin-top:10px;
-font-size:14px;
-}
-
-.feature p {
-font-size:13px;
-color:#aaa;
-}
-
 /* FLEET */
 .fleet {
-text-align:center;
 padding:80px 20px;
-}
-
-.fleet h1 {
-font-family:'Playfair Display', serif;
-font-size:36px;
+text-align:center;
 }
 
 .cars {
 display:flex;
 justify-content:center;
 gap:30px;
-margin-top:40px;
 flex-wrap:wrap;
 }
 
 .car {
 background:#111;
 width:420px;
-border:1px solid #222;
 }
 
 .car img {
 width:100%;
 }
 
-.car-content {
-padding:20px;
-text-align:left;
-}
-
-.car-content h3 {
-color:#d4af37;
-}
-
 /* MEDICAL */
 .medical {
-background:#0a0a0a;
 padding:80px 20px;
+background:#0a0a0a;
 text-align:center;
-}
-
-.medical h2 {
-font-family:'Playfair Display', serif;
-}
-
-.medical p {
-max-width:700px;
-margin:auto;
-color:#bbb;
 }
 
 /* FORM */
 .form-section {
 padding:80px 20px;
 text-align:center;
-}
-
-.form-section h1 {
-font-family:'Playfair Display', serif;
 }
 
 .form-grid {
@@ -196,25 +170,22 @@ grid-template-columns:1fr 1fr 1fr;
 gap:15px;
 }
 
-.form-grid input,
-.form-grid select,
-.form-grid textarea {
+.form-grid input, .form-grid select, textarea {
 padding:14px;
 background:#111;
 border:1px solid #222;
 color:white;
 }
 
-.form-grid textarea {
+textarea {
 grid-column: span 3;
 }
 
-.form-grid button {
+button {
 grid-column: span 3;
 padding:16px;
 background:#d4af37;
 border:none;
-font-weight:bold;
 }
 
 /* FOOTER */
@@ -222,50 +193,21 @@ font-weight:bold;
 background:#111;
 padding:40px;
 text-align:center;
-font-size:14px;
 }
-
 </style>
 </head>
 
 <body>
 
-.logo {
-display:flex;
-align-items:center;
-gap:10px;
-}
-
-/* Big gold PA */
-.logo .pa {
-font-family:'Playfair Display', serif;
-font-size:40px;
-font-weight:700;
-color:#d4af37;
-letter-spacing:2px;
-}
-
-/* Right side text */
-.logo-text {
-display:flex;
-flex-direction:column;
-line-height:1;
-}
-
-/* EXECUTIVE */
-.logo-text span:first-child {
-font-size:14px;
-letter-spacing:3px;
-font-weight:500;
-}
-
-/* TRANSPORTATION */
-.logo-text span:last-child {
-font-size:11px;
-letter-spacing:2px;
-color:#ccc;
-}
-
+<!-- NAV -->
+<div class="nav">
+<div class="logo">
+<span class="pa">PA</span>
+<div class="logo-text">
+<span>EXECUTIVE</span>
+<span>TRANSPORTATION</span>
+</div>
+</div>
 
 <div class="menu">
 <a href="#">HOME</a>
@@ -288,29 +230,17 @@ COMFORT.<br>
 
 <p>Premium transportation services in Miami and beyond.</p>
 
-<a href="#" class="btn">CALL NOW</a>
+<a href="tel:7866990846" class="btn">CALL NOW</a>
 <a href="#form" class="btn btn-outline">BOOK A RIDE</a>
 </div>
 </div>
 
 <!-- FEATURES -->
 <div class="features">
-<div class="feature">
-<h3>PUNCTUAL & RELIABLE</h3>
-<p>On-time service every time.</p>
-</div>
-<div class="feature">
-<h3>PROFESSIONAL DRIVERS</h3>
-<p>Experienced & courteous.</p>
-</div>
-<div class="feature">
-<h3>LUXURY FLEET</h3>
-<p>Top-tier vehicles.</p>
-</div>
-<div class="feature">
-<h3>PREMIUM SERVICE</h3>
-<p>Exceed expectations.</p>
-</div>
+<div class="feature"><h3>PUNCTUAL</h3></div>
+<div class="feature"><h3>PRO DRIVERS</h3></div>
+<div class="feature"><h3>LUXURY FLEET</h3></div>
+<div class="feature"><h3>PREMIUM</h3></div>
 </div>
 
 <!-- FLEET -->
@@ -320,19 +250,13 @@ COMFORT.<br>
 
 <div class="cars">
 <div class="car">
-<img src="suv.jpg">
-<div class="car-content">
-<h3>BLACK SUV</h3>
-<p>Spacious. Comfortable. Ideal for executives.</p>
-</div>
+<img src="https://images.unsplash.com/photo-1616789916187-6e3c6c36a2b4?auto=format&fit=crop&w=800&q=80">
+<h3>Black Luxury SUV</h3>
 </div>
 
 <div class="car">
-<img src="sprinter.jpg">
-<div class="car-content">
-<h3>BLACK SPRINTER VAN</h3>
-<p>Perfect for groups and events.</p>
-</div>
+<img src="https://images.unsplash.com/photo-1625047509168-a7026f36de04?auto=format&fit=crop&w=800&q=80">
+<h3>Black Sprinter Van (Group & Medical Courier)</h3>
 </div>
 </div>
 </div>
@@ -341,15 +265,18 @@ COMFORT.<br>
 <div class="medical" id="medical">
 <h2 class="gold">MEDICAL COURIER SERVICES</h2>
 <p>
-Secure, time-sensitive delivery of medical specimens, equipment, and supplies.
-Serving hospitals, clinics, and laboratories with reliability and professionalism.
+Reliable, secure, and time-sensitive medical courier services.
+We transport lab specimens, medical supplies, and equipment
+with professionalism and compliance. Available 24/7.
 </p>
 </div>
 
 <!-- FORM -->
 <div class="form-section" id="form">
-<h2 class="gold">BOOK YOUR RIDE</h2>
-<h1>RESERVE YOUR LUXURY TRANSPORTATION</h1>
+<h2 class="gold">CONTACT US</h2>
+<h1>BOOK YOUR RIDE</h1>
+
+<p>Email: <a href="mailto:Info@Paexecutivetranspo.com" style="color:gold;">Info@Paexecutivetranspo.com</a></p>
 
 <form action="https://formspree.io/f/YOUR-ID" method="POST">
 <div class="form-grid">
@@ -379,7 +306,10 @@ Serving hospitals, clinics, and laboratories with reliability and professionalis
 
 <!-- FOOTER -->
 <div class="footer">
-© 2026 PA Executive Transportation LLC
+<p>PA Executive Transportation LLC</p>
+<p>(786) 699-0846</p>
+<p><a href="mailto:Info@Paexecutivetranspo.com" style="color:gold;">Info@Paexecutivetranspo.com</a></p>
+<p>© 2026 All Rights Reserved</p>
 </div>
 
 </body>
