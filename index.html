@@ -3,9 +3,10 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
 <title>PA Executive Transportation LLC</title>
 
-<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700&family=Inter:wght@300;400;500&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600&family=Inter:wght@300;400;500&display=swap" rel="stylesheet">
 
 <style>
 body {
@@ -15,301 +16,155 @@ background:#000;
 color:#fff;
 }
 
-/* NAV */
-.nav {
+/* HERO */
+.hero {
+height:100vh;
 display:flex;
-justify-content:space-between;
-align-items:center;
-padding:25px 60px;
-position:absolute;
-width:100%;
-z-index:10;
-background:linear-gradient(to bottom, rgba(0,0,0,0.9), transparent);
+flex-direction:column;
+justify-content:center;
+padding:40px;
+
+background:
+linear-gradient(to right, rgba(0,0,0,0.9), rgba(0,0,0,0.3)),
+url('https://images.unsplash.com/photo-1493238792000-8113da705763?auto=format&fit=crop&w=1600&q=80')
+center/cover no-repeat;
 }
 
+/* LOGO */
 .logo {
+position:absolute;
+top:20px;
+left:30px;
 display:flex;
 align-items:center;
 gap:10px;
 }
 
 .logo .pa {
-font-family:'Playfair Display', serif;
-font-size:40px;
+font-family:'Playfair Display';
+font-size:32px;
 color:#d4af37;
 }
 
 .logo-text {
-display:flex;
-flex-direction:column;
 line-height:1;
 }
 
-.logo-text span:first-child {
-font-size:14px;
-letter-spacing:3px;
+.logo-text div:first-child {
+font-size:13px;
+letter-spacing:2px;
 }
 
-.logo-text span:last-child {
+.logo-text div:last-child {
 font-size:11px;
 color:#ccc;
 }
 
-.menu a {
-margin:0 15px;
-text-decoration:none;
-color:white;
-font-size:14px;
+/* TEXT */
+h1 {
+font-family:'Playfair Display';
+font-size:48px;
+line-height:1.2;
 }
 
-.phone {
-border:1px solid #d4af37;
-padding:10px 18px;
-border-radius:6px;
-}
+.gold { color:#d4af37; }
 
-/* HERO */
-.hero {
-height:100vh;
-display:flex;
-align-items:center;
-padding:0 80px;
-
-background:
-linear-gradient(to right, rgba(0,0,0,0.85), rgba(0,0,0,0.2)),
-url('hero.jpg') center/cover no-repeat;
-}
-
-.hero-text {
-max-width:520px;
-}
-
-.hero h1 {
-font-family:'Playfair Display', serif;
-font-size:64px;
-line-height:1.1;
-}
-
-.gold {
-color:#d4af37;
-}
-
-.hero p {
+p {
 color:#ccc;
+max-width:500px;
+}
+
+/* BUTTONS */
+.buttons {
+margin-top:20px;
 }
 
 .btn {
 display:inline-block;
-margin-top:20px;
-padding:14px 28px;
+padding:14px 24px;
+margin-right:10px;
+text-decoration:none;
+font-weight:500;
+}
+
+.call {
 background:#d4af37;
 color:black;
-text-decoration:none;
-margin-right:10px;
 }
 
-.btn-outline {
+.email {
 border:1px solid #d4af37;
 color:#d4af37;
-background:none;
 }
 
-/* FEATURES */
-.features {
-display:flex;
-justify-content:space-around;
-padding:50px;
-background:#0b0b0b;
-}
-
-.feature {
-text-align:center;
-max-width:200px;
-}
-
-/* FLEET */
-.fleet {
-padding:80px 20px;
+/* SERVICES */
+.section {
+padding:60px 20px;
 text-align:center;
 }
 
-.cars {
-display:flex;
-justify-content:center;
-gap:30px;
-flex-wrap:wrap;
-}
-
-.car {
-background:#111;
-width:420px;
-}
-
-.car img {
-width:100%;
-}
-
-/* MEDICAL */
-.medical {
-padding:80px 20px;
-background:#0a0a0a;
-text-align:center;
-}
-
-/* FORM */
-.form-section {
-padding:80px 20px;
-text-align:center;
-}
-
-.form-grid {
-max-width:1000px;
-margin:auto;
-display:grid;
-grid-template-columns:1fr 1fr 1fr;
-gap:15px;
-}
-
-.form-grid input, .form-grid select, textarea {
-padding:14px;
-background:#111;
-border:1px solid #222;
-color:white;
-}
-
-textarea {
-grid-column: span 3;
-}
-
-button {
-grid-column: span 3;
-padding:16px;
-background:#d4af37;
-border:none;
+.section h2 {
+font-family:'Playfair Display';
 }
 
 /* FOOTER */
 .footer {
 background:#111;
-padding:40px;
+padding:30px;
 text-align:center;
+font-size:14px;
 }
 </style>
 </head>
 
 <body>
 
-<!-- NAV -->
-<div class="nav">
+<!-- LOGO -->
 <div class="logo">
-<span class="pa">PA</span>
+<div class="pa">PA</div>
 <div class="logo-text">
-<span>EXECUTIVE</span>
-<span>TRANSPORTATION</span>
+<div>EXECUTIVE</div>
+<div>TRANSPORTATION</div>
 </div>
-</div>
-
-<div class="menu">
-<a href="#">HOME</a>
-<a href="#fleet">FLEET</a>
-<a href="#medical">MEDICAL</a>
-<a href="#form">CONTACT</a>
-</div>
-
-<div class="phone">(786) 699-0846</div>
 </div>
 
 <!-- HERO -->
 <div class="hero">
-<div class="hero-text">
 <h1>
 LUXURY.<br>
 COMFORT.<br>
 <span class="gold">ON TIME.</span>
 </h1>
 
-<p>Premium transportation services in Miami and beyond.</p>
-
-<a href="tel:7866990846" class="btn">CALL NOW</a>
-<a href="#form" class="btn btn-outline">BOOK A RIDE</a>
-</div>
-</div>
-
-<!-- FEATURES -->
-<div class="features">
-<div class="feature"><h3>PUNCTUAL</h3></div>
-<div class="feature"><h3>PRO DRIVERS</h3></div>
-<div class="feature"><h3>LUXURY FLEET</h3></div>
-<div class="feature"><h3>PREMIUM</h3></div>
-</div>
-
-<!-- FLEET -->
-<div class="fleet" id="fleet">
-<h2 class="gold">OUR FLEET</h2>
-<h1>RIDE IN STYLE</h1>
-
-<div class="cars">
-<div class="car">
-<img src="https://images.unsplash.com/photo-1616789916187-6e3c6c36a2b4?auto=format&fit=crop&w=800&q=80">
-<h3>Black Luxury SUV</h3>
-</div>
-
-<div class="car">
-<img src="https://images.unsplash.com/photo-1625047509168-a7026f36de04?auto=format&fit=crop&w=800&q=80">
-<h3>Black Sprinter Van (Group & Medical Courier)</h3>
-</div>
-</div>
-</div>
-
-<!-- MEDICAL -->
-<div class="medical" id="medical">
-<h2 class="gold">MEDICAL COURIER SERVICES</h2>
 <p>
-Reliable, secure, and time-sensitive medical courier services.
-We transport lab specimens, medical supplies, and equipment
-with professionalism and compliance. Available 24/7.
+Premium transportation and medical courier services in Miami and surrounding areas.
 </p>
+
+<div class="buttons">
+<a href="tel:17866990846" class="btn call">CALL NOW</a>
+<a href="mailto:info@paexecutivetranspo.com" class="btn email">CONTACT US</a>
+</div>
 </div>
 
-<!-- FORM -->
-<div class="form-section" id="form">
-<h2 class="gold">CONTACT US</h2>
-<h1>BOOK YOUR RIDE</h1>
-
-<p>Email: <a href="mailto:Info@Paexecutivetranspo.com" style="color:gold;">Info@Paexecutivetranspo.com</a></p>
-
-<form action="https://formspree.io/f/YOUR-ID" method="POST">
-<div class="form-grid">
-
-<input type="text" placeholder="Full Name" required>
-<input type="tel" placeholder="Phone Number" required>
-<input type="email" placeholder="Email Address" required>
-
-<input type="text" placeholder="Pickup Location" required>
-<input type="text" placeholder="Drop-off Location" required>
-<input type="datetime-local" required>
-
-<select>
-<option>Select Service</option>
-<option>Airport Transfer</option>
-<option>Chauffeur</option>
-<option>Medical Courier</option>
-</select>
-
-<textarea placeholder="Additional Information"></textarea>
-
-<button type="submit">REQUEST BOOKING</button>
-
+<!-- SERVICES -->
+<div class="section">
+<h2 class="gold">OUR SERVICES</h2>
+<p>Luxury transportation for executives, airport transfers, and private clients.</p>
 </div>
-</form>
+
+<div class="section">
+<h2 class="gold">MEDICAL COURIER</h2>
+<p>
+Reliable and time-sensitive delivery of medical specimens, equipment,
+and supplies. Serving hospitals, labs, and clinics with professionalism.
+</p>
 </div>
 
 <!-- FOOTER -->
 <div class="footer">
 <p>PA Executive Transportation LLC</p>
 <p>(786) 699-0846</p>
-<p><a href="mailto:Info@Paexecutivetranspo.com" style="color:gold;">Info@Paexecutivetranspo.com</a></p>
-<p>© 2026 All Rights Reserved</p>
+<p><a href="mailto:info@paexecutivetranspo.com" style="color:#d4af37;">info@paexecutivetranspo.com</a></p>
 </div>
 
 </body>
